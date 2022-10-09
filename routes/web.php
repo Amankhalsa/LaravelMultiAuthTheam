@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MainUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,4 @@ Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function 
     return view('user.index');
     
 })->name('dashboard');
-Route::post('/user/logout', [MainUserController::class, 'store'])->name('user.logout');
+Route::get('/user/logout', [MainUserController::class, 'userLogout'])->name('user.logout');
