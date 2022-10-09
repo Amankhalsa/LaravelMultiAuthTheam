@@ -1,2 +1,6 @@
 vandervort.clemmie@example.org
 password
+
+$(document).ready(function(){
+$('#image')
+}

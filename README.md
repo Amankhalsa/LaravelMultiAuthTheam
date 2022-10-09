@@ -1,4 +1,24 @@
+# Use  Dashboard
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/FJfW4Xj/User-dashboard.png" </a></p>
+
+# Admin Dashboard
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/q7Bq44x/admin-dashboard.png" </a></p>
+
+# onchange script required CND
+
+        <script>
+
+        $(document).ready(function(){
+        $('#image').change(function(e){
+        var reader = new FileReader();
+        reader.onload = function(e){
+        $('#showimage').attr('src',e.target.result);
+        }
+        reader.readAsDataUrl(e.target.files['0']);
+        });
+        });
+        </script>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
