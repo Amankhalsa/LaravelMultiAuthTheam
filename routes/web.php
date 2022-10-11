@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MainAdminController;
 use App\Http\Controllers\MainUserController;
 
 /*
@@ -51,3 +52,16 @@ Route::post('/update/user/profile', [MainUserController::class, 'updateProfile']
 Route::get('/user/password/view', [MainUserController::class, 'userPasswordView'])->name('user.password.view');
 // password.update
 Route::post('/user/password/update', [MainUserController::class, 'userPasswordupdate'])->name('password.update');
+
+
+// admin.profile
+
+Route::get('admin/profile', [MainAdminController::class, 'adminProfile'])->name('admin.profile');
+// edit.admin.profile
+Route::get('edit/admin/profile', [MainAdminController::class, 'editadminProfile'])->name('edit.admin.profile');
+// updateAdminProfile
+Route::post('update/admin/profile', [MainAdminController::class, 'updateadminProfile'])->name('updateAdminProfile');
+// admin.changepassword
+Route::get('admin/password', [MainAdminController::class, 'adminPasswordView'])->name('admin.changepassworde');
+// update.Admin.password
+Route::post('/admin/password/update', [MainAdminController::class, 'updateAdminPassword'])->name('update.Admin.password');

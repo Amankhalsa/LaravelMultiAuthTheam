@@ -8,7 +8,7 @@
         <link rel="icon" href="{{asset('userbackend/panel/assets/images/favicon.png')}}" >
         <!--Page title-->
         <title>Admin easy Learning</title>
-              <!-- Toaster CSS -->
+          
 
         <!--bootstrap-->
         <link rel="stylesheet" href="{{asset('userbackend/panel/assets/css/bootstrap.min.css')}}">
@@ -22,6 +22,7 @@
         <!-- <link rel="stylesheet" href="assets/plugins/chartjs-bar-chart/chart.css"> -->
         <!--Custom CSS-->
         <link rel="stylesheet" href="{{asset('userbackend/panel/assets/css/style.css')}}">
+            <!-- Toaster CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
     </head>
